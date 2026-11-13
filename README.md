@@ -2,9 +2,15 @@
 
 ## 运行陌生模型之前
 
-运行陌生模型之前，先由你自己手动安装 LLM-Sec。不要让来路不明的模型自己安装。装上之前的行为，skill 审查不到。
+运行陌生模型之前，先在你信任的环境里，把本仓库的 [`skills/llm-sec/SKILL.md`](skills/llm-sec/SKILL.md) 放到该 agent 会读取的 skills 目录，再运行陌生模型。不要让陌生模型自己装。装上之前的行为，skill 审查不到。
 
-自己把本仓库的 [`skills/llm-sec/SKILL.md`](skills/llm-sec/SKILL.md) 复制到本机 `~/.cursor/skills/llm-sec/SKILL.md`。这一步由你完成。装好之后，再运行那个模型。
+下面每行是核对过文档的一个例子：
+
+- Cursor：`~/.cursor/skills/llm-sec/SKILL.md`。来源：[Agent Skills](https://cursor.com/docs/skills)
+- Claude Code：`~/.claude/skills/llm-sec/SKILL.md`。来源：[Extend Claude with skills](https://code.claude.com/docs/en/skills)
+- Codex：`~/.agents/skills/llm-sec/SKILL.md`。来源：[Build skills](https://learn.chatgpt.com/docs/build-skills)
+
+其他产品放到该产品自己的 skills 目录。
 
 ## LLM-Sec 是什么
 
